@@ -1,0 +1,63 @@
+# Dependencies
+**/node_modules/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.crt
+*.p12
+*.token
+.npmrc
+!.npmrc.example
+
+# Build and framework caches
+dist/
+**/dist/
+build/
+out/
+.angular/
+.cache/
+tmp/
+temp/
+
+# Test output and coverage
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+
+# Logs and debug output
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local databases and database journals
+**/*.db
+**/*.db-journal
+**/*.sqlite
+**/*.sqlite3
+
+# IDE and OS files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary and generated files
+*.tmp
+*.temp
+*.swp
+*.swo
+*.orig
