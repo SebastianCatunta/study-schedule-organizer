@@ -59,3 +59,21 @@ Use PascalCase classes, camelCase symbols, kebab-case filenames/routes, and sing
 - `scripts/validate-module.py`: structural and naming checks.
 - `scripts/generate-tests.py`: deterministic Jest/Supertest test scaffolding.
 - `scripts/check-consistency.py`: backend/frontend symbol and endpoint consistency checks.
+
+## Installation and demonstration
+
+This skill is installed by placing this directory at `.opencode/skills/crud-module-generator/` in the project. No npm package is required. Python 3.9+ is required only for the bundled validation and demonstration scripts.
+
+Read `docs/INSTALLATION.md` for prerequisites, installation, execution examples, and expected output. Read `docs/PRESENTATION.md` for the recommended individual demonstration and the design decisions to explain.
+
+Run the self-contained demonstration from the skill directory:
+
+```bash
+python demo/run-demo.py
+```
+
+The demonstration validates a successful `materia` fixture and then intentionally validates an incomplete fixture to show the expected error handling. It does not modify the application project.
+
+## Validation evidence
+
+Use `tests/README.md` for reproducible success and failure cases. Store screenshots and terminal captures in `evidence/screenshots/`, using the naming scheme described in `evidence/README.md`; keep generated test output in `evidence/runs/`.
